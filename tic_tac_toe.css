@@ -1,0 +1,119 @@
+.tic-tac-toe-container {
+	width: 400px;
+	margin: auto;
+	position: relative;
+	top: 150px;
+	left: 0px;
+	padding-right: 0px;
+}
+h1 {
+	text-align: center;
+	left: -43px;
+	position: relative;
+	top: 20px;
+}
+
+#player-two {
+	position: relative;
+}
+
+#player-one {
+	position: relative;
+	text-align: center;
+}
+
+#player1slot {
+	height: 100px;
+	width: 300px;
+	border: 2px solid black;
+	display: inline-block;
+	position: relative;
+	left: 3%;
+	right: 50%;
+	top: 50px;
+}
+
+#player2slot {
+	height: 100px;
+	width: 300px;
+	border: 2px solid black;
+	display: inline-block;
+	position: relative;
+	right: -43%;
+	top: 50px;
+
+}
+
+.playerh1 {
+	text-align: center;
+	padding-left: 65px;
+}
+
+
+#top-left {
+	border: 2px solid black;
+	height: 100px;
+	width: 100px;
+	border-left: none;
+	border-top: none;
+	
+}
+#top-center {
+	border: 2px solid black;
+	height: 100px;
+	width: 100px;
+	border-top: none;
+	
+}
+#top-right {
+	border: 2px solid black;
+	height: 100px;
+	width: 100px;
+	border-right: none;
+	border-top: none;
+}
+#center-left {
+	border: 2px solid black;
+	height: 100px;
+	width: 100px;
+	border-left: none;
+}
+#dead-center {
+	border: 2px solid black;
+	height: 100px;
+	width: 100px;
+}
+#center-right {
+	border: 2px solid black;
+	height: 100px;
+	width: 100px;
+	border-right: none;
+}
+#bottom-left {
+	border: 2px solid black;
+	height: 100px;
+	width: 100px;
+	border-left: none;
+	border-bottom: none;
+}
+#bottom-center {
+	border: 2px solid black;
+	height: 100px;
+	width: 100px;
+	border-bottom: none;
+}
+#bottom-right {
+	border: 2px solid black;
+	height: 100px;
+	width: 100px;
+	border-right: none;
+	border-bottom: none;
+}
+
+#start-button {
+	position: relative;
+	top: 5px;
+	left: 637px;
+}
+
+ 
