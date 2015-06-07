@@ -7,8 +7,8 @@ body {
 	width: 400px;
 	margin: auto;
 	position: relative;
-	top: -32px;
-	left: 38px;
+	bottom: 400px;
+	left: 42px;
 	margin-bottom: 40px;
 }
 
@@ -52,7 +52,7 @@ body {
 	font-family: 'Indie Flower', cursive;
 	color: white;
 	font-size: 50px;
-	position: absolute;
+	position: relative;
 	left: 1000px;
 
 }
@@ -62,8 +62,8 @@ body {
 	font-family: 'Indie Flower', cursive;
 	position: relative;
 	display: inline;
-	top: 220px;
-	right: -126px;
+	top: 170px;
+	right: -248px;
 
 	
 }
@@ -73,8 +73,8 @@ body {
 	font-family: 'Indie Flower', cursive;
 	position: relative;
 	display: inline;
-	left: 1200px;
-	top: 220px;
+	left: 1070px;
+	top: 172px;
 }
 
 
@@ -157,6 +157,27 @@ button#reset-button {
 	color: white;
 	font-size: 50px;
 	text-align: center;
+	position: relative;
+}
+
+#p1score {
+	font-family: 'Indie Flower', cursive;
+	color: white;
+	font-size: 50px;
+	position: relative;
+	left: 260px;
+	top: 100px;
+
+}
+
+#p2score {
+	font-family: 'Indie Flower', cursive;
+	color: white;
+	font-size: 50px;
+	position: relative;
+	left: 1120px;
+	top: -41px;
+	
 }
 
  
