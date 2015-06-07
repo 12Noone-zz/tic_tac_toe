@@ -1,109 +1,139 @@
+
+body {
+	background-image: url("http://housesinvallejo.com/wp-content/uploads/2014/07/bigstock-Blackboard-chalkboard-textur-15751904.jpg");
+}
+
 .tic-tac-toe-container {
 	width: 400px;
 	margin: auto;
 	position: relative;
-	top: 150px;
-	left: 0px;
-	padding-right: 0px;
-}
-h1 {
-	text-align: center;
-	left: -43px;
-	position: relative;
-	top: 20px;
+	top: -32px;
+	left: 38px;
+	margin-bottom: 40px;
 }
 
+#welcome {
+	font-size: 100px;
+	font-family: 'Indie Flower', cursive;
+	color: white;
+	text-align: center;
+	position: relative;
+	opacity: .8;
+}
+
+/*this styles the players names as they appear*/
 #player-two {
 	position: relative;
+	font-family: 'Indie Flower', cursive;
+	color: white;
+	left: 1114px;
+	bottom: -8px;
 }
-
+/*this styles the players names as they appear*/
 #player-one {
 	position: relative;
-	text-align: center;
+	font-family: 'Indie Flower', cursive;
+	color: white;
+	right: -240px;
+	top: 75px;
 }
 
-#player1slot {
-	height: 100px;
-	width: 300px;
-	border: 2px solid black;
-	display: inline-block;
+#viewname1 {
+	font-family: 'Indie Flower', cursive;
+	color: white;
+	font-size: 50px;
+	top: 173px;
+	right: -150px;
 	position: relative;
-	left: 3%;
-	right: 50%;
-	top: 50px;
+
 }
 
-#player2slot {
-	height: 100px;
-	width: 300px;
-	border: 2px solid black;
-	display: inline-block;
+#viewname2 {
+	font-family: 'Indie Flower', cursive;
+	color: white;
+	font-size: 50px;
+	position: absolute;
+	left: 1000px;
+
+}
+
+#left {
+	color: white;
+	font-family: 'Indie Flower', cursive;
 	position: relative;
-	right: -43%;
-	top: 50px;
+	display: inline;
+	top: 220px;
+	right: -126px;
 
+	
 }
 
-.playerh1 {
-	text-align: center;
-	padding-left: 65px;
+#right {
+	color: white;
+	font-family: 'Indie Flower', cursive;
+	position: relative;
+	display: inline;
+	left: 1200px;
+	top: 220px;
 }
 
 
 #top-left {
-	border: 2px solid black;
+	border: 2px solid white;
 	height: 100px;
 	width: 100px;
 	border-left: none;
 	border-top: none;
 	
+	
 }
 #top-center {
-	border: 2px solid black;
+	border: 2px solid white;
 	height: 100px;
 	width: 100px;
 	border-top: none;
+
 	
 }
 #top-right {
-	border: 2px solid black;
+	border: 2px solid white;
 	height: 100px;
 	width: 100px;
 	border-right: none;
 	border-top: none;
 }
 #center-left {
-	border: 2px solid black;
+	border: 2px solid white;
 	height: 100px;
 	width: 100px;
 	border-left: none;
 }
 #dead-center {
-	border: 2px solid black;
+	border: 2px solid white;
 	height: 100px;
 	width: 100px;
 }
 #center-right {
-	border: 2px solid black;
+	border: 2px solid white;
 	height: 100px;
 	width: 100px;
 	border-right: none;
 }
 #bottom-left {
-	border: 2px solid black;
+	border: 2px solid white;
 	height: 100px;
 	width: 100px;
 	border-left: none;
 	border-bottom: none;
 }
 #bottom-center {
-	border: 2px solid black;
+	border: 2px solid white;
 	height: 100px;
 	width: 100px;
 	border-bottom: none;
 }
 #bottom-right {
-	border: 2px solid black;
+	border: 2px solid white;
 	height: 100px;
 	width: 100px;
 	border-right: none;
@@ -112,8 +142,21 @@ h1 {
 
 #start-button {
 	position: relative;
-	top: 5px;
-	left: 637px;
+	top: -115px;
+	left: 583px;
+}
+
+button#reset-button {
+  right: -710px;
+  position: relative;
+  top: -115px;
+}
+
+.piece-style {
+	font-family: 'Indie Flower', cursive;
+	color: white;
+	font-size: 50px;
+	text-align: center;
 }
 
  
