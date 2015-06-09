@@ -1,0 +1,158 @@
+body {
+	background-image: url('http://lovelanekitchen.com/wp-content/uploads/2013/03/LLK_Chalkboard-background.jpg');
+	font-family: 'Indie Flower', cursive;
+	color: white;
+}
+
+.container {
+	width: 1140px;
+	margin: 0 auto;
+}
+
+/*------------------------------------------------ 
+ *
+ * header
+ *
+ *------------------------------------------------
+ */
+.header h1 {
+	font-size: 100px;
+	text-align: center;
+	margin-top: 25px;
+	margin-bottom: 0;
+}
+
+.buttons {
+	text-align: center;
+	margin: auto;
+}
+
+.button {
+	background-color: transparent;
+	border: none;
+	font-size: 25px;
+	display: inline-block;
+
+}
+.button:focus {
+	outline: 0;
+	box-shadow: none;
+}
+
+.button:hover {
+	color:red;
+}
+
+
+
+.tic-tac-toe-container {
+}
+
+.tic-tac-toe {
+}
+
+/*------------------------------------------------ 
+ *
+ * columns
+ *
+ *------------------------------------------------
+ */
+
+.col {
+	width: 380px;
+	float: left;
+}
+
+.player-scoreboard {
+	border: 2px solid white;
+	border-radius: 15px;
+	text-align: center;
+	margin-left: 50px;
+	margin-right: 50px;
+
+}
+
+.heading {
+	font-size: 25px;
+	text-decoration: underline;
+	margin-bottom: 0;
+}
+
+.player-name {
+	margin-top: 0;
+}
+
+.score {
+	font-size: 25px;
+}
+
+/*------------------------------------------------ 
+ *
+ * start cells styling
+ *
+ *------------------------------------------------
+ */
+
+.tic-tac-toe td {
+	border: 2px solid white;
+	height: 127px;
+	width: 127px;
+	position: relative;
+}
+
+#top-left {
+	border-left: none;
+	border-top: none;
+}
+
+#top-center {
+	border-top: none;
+	
+}
+
+#top-right {
+	border-top: none;
+	border-right: none;	
+}
+
+#center-left {
+	border-left: none;
+	
+}
+
+#center-right {
+	border-right: none;
+}
+
+#bottom-left {
+	border-left: none;
+	border-bottom: none;	
+}
+
+#bottom-center {
+	position: relative;
+	border-bottom: none;
+}
+
+#bottom-right {
+	border-right: none;
+	border-bottom: none;
+}
+
+/*------------------------------------------------ 
+ *
+ * start piece styling
+ *
+ *------------------------------------------------
+ */
+.piece-style {
+	font-size: 85px;
+	text-align: center;
+}
+.outline-hover {
+	font-size: 85px;
+	text-align: center;
+	opacity: .8;
+	text-decoration: dotted; 
+	color: red;
+}
