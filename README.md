@@ -1,39 +1,49 @@
-# tic_tac_toe/
-<!-- 
-Tic tac toe is a game where two players alternate. There are X's and O's. Three X's or O's in a row
-means the player has won.
+# Tic Tac Toe 
+### By Jill Noone 
 
-We need a grid layout that will allow the user to click to add an X or an O. 
+A pretty simple game of classic Tic-Tac-Toe.
 
-HTML 
-tables seem to be the best option here, bummer we haven't really gone over them. 
+* [Imgur](http://i.imgur.com/ilg2kJO.jpg)
+* [Tic-Tac-Toe](http://12noone.github.io/tic_tac_toe/)
 
+## Technologies used:
 
-CSS
-border-left/right/bottom left out when appropriate to make it look like the tictactoe board
-class for the x and o that are applied when the proper grid is clicked.
+1. HTML
+* The working skeleton the browser renders
+* set up in columns for easy css selecting
+2. CSS
+* The styling aspect of the game
+3. Javascript
+* A series of functions testing for empty spaces, spaces occuring in certain orders, removing and adding appropriate classes, and declaring winners or a tie. It also updates the score board and assigns names to the player board slots.
+Jquery
+..* similar to javascript. Handles alot of the dom manipulation elements
 
+## User Stories 
 
-JAVASCRIPT
-so what will happen here? when we click on a spot we want an X or an O to show up.
-The X and O ought to be different colors, I suppose.
-The bitchy kitty here, is how to teach javascript to look for the right 
-combination of X's and O's? three in a row or diagonal?
+* A player should be prompted first for first player and then for second. The names should display correctly on the browser. 
 
-so we can store the tictac toe board in an array. an array of arrays. I hate arrays of arrays. maybe I can space it out so it resembles the board?
+* Player one always has the first move. Life's rough, get a helmet. 
 
-we can write a function that will iterate through the array and, upon clicking, test if there's anything in the array in the corresponding spot. if yes, do nothing, if no, addClass x or o. 
+* Filling any row or column or diagonal with the same piece will result in a tic-tac-toe win, the end of the game, the update of the score board.
 
-
-
-
-
-
+* Players can choose to either reset the game and set the board, player, score board, back to it's original state OR choose a new game which will only reset the board.
 
 
 
+## Problems I had along the way 
+
+Determining the tie was really tricky. I understood what I wanted, to test for != null and !winner but finding the right place for it and implementing it was tough.
 
 
+I also struggled with finding a way to stop the play after a winner's been declared. Again, understanding what I wanted but not sure where the code should go in the bigger picture. 
+
+## Things I'd Change 
+
+* The javascript and jquery are a bit a mess. Things work but I'd love to go in and refactor it to a cleaner and neater format. I'd also like to play around with animation in the css more.
+* a classAdd to the winner that will highlight those player pieces that won red so it's easy to separate the men from the boys.
 
 
- -->
+## Unsolved Problems 
+
+I got part way through coding a hover preview of the letter selected and I'd love to finish that as I think it's a sharp addition.
+

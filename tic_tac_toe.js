@@ -2,14 +2,14 @@ var playerOneObject = {
 	Name: "player",
 	piece: "X",
 	wins: 0,
-	$scoreBoard: $('#p1score') //but I dont know what it is.
+	$scoreBoard: $('#p1score')
 }
 
 var playerTwoObject = {
 	Name: "playertwo",
 	piece: "O",
 	wins: 0,
-	$scoreBoard: $('#p2score') //this is doing something shitty with the scores in html
+	$scoreBoard: $('#p2score') 
 }
 var turn = playerOneObject; 
 var tie = false;
@@ -39,16 +39,11 @@ var $player2View = $('#player-two');
 $gameBoard.on('mouseenter', 'td', function(eventObject) {
 	var $currentSquare = $(this);
 	$currentSquare.addClass('outline-hover ' + turn.piece);
-	//addClass that'll indicated it's hovered. that'd dotted faded red line.
-	//addClass to indicate what player turn it is.
 }); 
 
 $gameBoard.on('mouseleave', 'td', function(eventObject) {
 	var $currentSquare = $(this);
 	$currentSquare.removeClass('outline-hover ' + turn.piece);
-	//remove hover
-	//remove which player
-	//remove text decoration
 	console.log("mouse left");
 });
 
@@ -80,7 +75,6 @@ var changePlayer = function() {
 		
 	}
 }
-
 
 var determineWinner = function() { 
 	var count = 0; 
@@ -138,11 +132,7 @@ var tie = function() {
 		alert("it's a tie");
 	}
 }
-/*
-it can't go in the for loop or it endlessly calls it a tie
-it can't go outside the for loop but in the if statement
-determing winner or it skips the if's entirely on the first try.
-*/
+
 
 var $resetButton = $('#reset-button'); 
 $resetButton.on('click', function() { 
@@ -175,44 +165,4 @@ var $newGame = $('#new-game');
 	winner = false;
 	changePlayer();  
 });
-
-//problems to fix 
-/*
-
-1) the game will let you continue to add X's or O's after the game's been won.
-2) the game isn't logging wins on the diagonal
-3) need to end game with a tie. 
-4) need to set the player object win back to zero but doing so somehow fucks up the reset button.
-
-things I've tried and what went wrong 
-1) tie: an else statement setting winner to false if none of the conditions are met 
-	I've tried in in the loop, out of the loop, at the end of the function 
-	no matter where it is, it automatically sets winner to false 
-	if it's in the loop, it sets winner to false until I want to throw my computer across the room
-
-2) scoreboard problem: the data from the score board isn't resetting with the display scoreboard
-	this means that while the number may disappear from the screen, playerObjectOne.wins is still set to 
-	the original score. thus it just picks up where it left off.
-
-	I've tried setting playerOneObjects.wins back to zero in the reset button function 
-	and it says either that playerOneObject.wins isnt' defined (which is horse shit it's totally 
-	there in the global scope as an object) OR it breaks my game completely. cool.
-
-	status: resolved. I'm a fucking idiot.
-
-3) logging wins on the diagonal. tried
-	status: I don't know when. I don't know why. but apparently I solved this at some point today.
-
-4) stopping user input after a win (or tie I suppose) has been determined.
-	really just not sure on this one.
-
-
-
-
-*/
-
-
-	
-
-
 
