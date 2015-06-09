@@ -6,43 +6,52 @@
 	<link href='http://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
 </head>
 <body>
-	<div 
-  	<h1 id="welcome">Welcome to Tic-Tac-Toe!</h1>
-	<h3 id="viewname1">Player One</h3>
-	<h3 id="viewname2">Player Two</h3>
-	<div class="buttons">
-		<button id="start-button">Begin!</button>
-		<button id="reset-button">Reset!</button>
-		<button id="new-game">New Game!</button>
-	</div>
-	<div id="player-headings">
-		<h1 id="player-one"></h1>
-		<h1 id="player-two"></h1>
-	</div>
-	<div id="score-board">
-		<h4 id="left">Score</h4>
-		<h4 id="right">Score</h4>
-		<h4 id="p1score">0</h4>
-		<h4 id="p2score">0</h4>
-	<div>
-	<div class="tic-tac-toe-container">
-		<table class="tic-tac-toe">
-			<tr class="row1">
-				<td id="top-left"></td>
-				<td id="top-center"></td>
-				<td id="top-right"></td>
-			</tr>
-			<tr class="row2">
-				<td id="center-left"></td>
-				<td id="dead-center"></td>
-				<td id="center-right"></td>
-			</tr>
-			<tr class="row3">
-				<td id="bottom-left"></td>
-				<td id="bottom-center"></td>
-				<td id="bottom-right"></td>
-			</tr>
-		</table>
+	<div class="container">
+	 	<header class="header">
+	 		<h1 id="welcome">Welcome to Tic-Tac-Toe!</h1>
+	 		<div class="buttons">
+				<button class="button" id="start-button">Begin!</button>
+				<button class="button" id="reset-button">Reset!</button>
+				<button class="button" id="new-game">New Game!</button>
+			</div>
+	 	</header>
+	 	<div class="col">
+	 		<div class="player-scoreboard">
+		 		<h1 class="heading">Player One</h1>
+		 		<h2 id="player-one" class="player-name"></h2>
+		 		<h4 class="heading">Score</h4>
+		 		<h4 id="p1score" class="score">0</h4>
+	 		</div>
+	 	</div>
+	 	<div class="col">
+	 		<div class="tic-tac-toe-container">
+				<table class="tic-tac-toe">
+					<tr class="row1">
+						<td id="top-left"></td>
+						<td id="top-center"></td>
+						<td id="top-right"></td>
+					</tr>
+					<tr class="row2">
+						<td id="center-left"></td>
+						<td id="dead-center"></td>
+						<td id="center-right"></td>
+					</tr>
+					<tr class="row3">
+						<td id="bottom-left"></td>
+						<td id="bottom-center"></td>
+						<td id="bottom-right"></td>
+					</tr>
+				</table>
+			</div>
+	 	</div>
+		<div class="col">
+			<div class="player-scoreboard">
+				<h1 class="heading">Player Two</h1>
+				<h2 id="player-two" class="player-name"></h2>
+				<h4 class="heading">Score</h4>
+				<h4 id="p2score" class="score">0</h4>
+			</div>
+		</div>
 	</div>
 	<script src="tic_tac_toe.js"></script>
 </body>
