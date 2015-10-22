@@ -1,13 +1,13 @@
 var playerOneObject = { 
 	Name: "player",
-	piece: "X",
+	piece: 'X',
 	wins: 0,
 	$scoreBoard: $('#p1score')
 }
 
 var playerTwoObject = {
 	Name: "playertwo",
-	piece: "O",
+	piece: 'O',
 	wins: 0,
 	$scoreBoard: $('#p2score') 
 }
@@ -111,7 +111,7 @@ var determineWinner = function() {
 		count = 0; 
 	}
 	if (winner) {
-		alert(turn.Name + " is the winner! second block");
+		alert(turn.Name + " is the winner!");
 		turn.wins = turn.wins + 1;
 		turn.$scoreBoard.text(turn.wins);
 	}

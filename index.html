@@ -1,58 +1,64 @@
 <html>
+
 <head>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-	<link rel="stylesheet" type="text/css" href="tic_tac_toe.css">
-	<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
-	<link href='http://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="tic_tac_toe.css">
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+    <link href='http://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 </head>
+
 <body>
-	<div class="container">
-	 	<header class="header">
-	 		<h1 id="welcome">Welcome to Tic-Tac-Toe!</h1>
-	 		<div class="buttons">
-				<button class="button" id="start-button">Begin!</button>
-				<button class="button" id="reset-button">Reset!</button>
-				<button class="button" id="new-game">New Game!</button>
-			</div>
-	 	</header>
-	 	<div class="col">
-	 		<div class="player-scoreboard">
-		 		<h1 class="heading">Player One</h1>
-		 		<h2 id="player-one" class="player-name"></h2>
-		 		<h4 class="heading">Score</h4>
-		 		<h4 id="p1score" class="score">0</h4>
-	 		</div>
-	 	</div>
-	 	<div class="col">
-	 		<div class="tic-tac-toe-container">
-				<table class="tic-tac-toe">
-					<tr class="row1">
-						<td id="top-left"></td>
-						<td id="top-center"></td>
-						<td id="top-right"></td>
-					</tr>
-					<tr class="row2">
-						<td id="center-left"></td>
-						<td id="dead-center"></td>
-						<td id="center-right"></td>
-					</tr>
-					<tr class="row3">
-						<td id="bottom-left"></td>
-						<td id="bottom-center"></td>
-						<td id="bottom-right"></td>
-					</tr>
-				</table>
-			</div>
-	 	</div>
-		<div class="col">
-			<div class="player-scoreboard">
-				<h1 class="heading">Player Two</h1>
-				<h2 id="player-two" class="player-name"></h2>
-				<h4 class="heading">Score</h4>
-				<h4 id="p2score" class="score">0</h4>
-			</div>
-		</div>
-	</div>
-	<script src="tic_tac_toe.js"></script>
+    <div class="container">
+        <header class="header">
+            <h1 id="welcome">Welcome to Tic-Tac-Toe!</h1>
+            <div class="buttons">
+                <button class="button" id="start-button">New Game!</button>
+                <button class="button" id="reset-button">Reset!</button>
+                <button class="button" id="new-game">Do Over!</button>
+            </div>
+        </header>
+        <div class="col">
+            <div class="player-scoreboard">
+                <h1 class="heading player-one-heading">Player One</h1>
+                <h2 id="player-one" class="player-name"></h2>
+                <h4 class="heading player-one-score">Score</h4></li>
+                <h4 id="p1score" class="score">0</h4>
+            </div>
+        </div>
+        <div class="col">
+            <div class="player-scoreboard">
+                <h1 class="heading">Player Two</h1>
+                <h2 id="player-two" class="player-name"></h2>
+                <h4 class="heading">Score</h4>
+                <h4 id="p2score" class="score">0</h4>
+            </div>
+        </div>
+        <div class="tic-tac-toe-container">
+	        <table class="tic-tac-toe">
+	            <tr class="row1">
+	                <td id="top-left"></td>
+	                <td id="top-center"></td>
+	                <td id="top-right"></td>
+	            </tr>
+	            <tr class="row2">
+	                <td id="center-left"></td>
+	                <td id="dead-center"></td>
+	                <td id="center-right"></td>
+	            </tr>
+	            <tr class="row3">
+	                <td id="bottom-left"></td>
+	                <td id="bottom-center"></td>
+	                <td id="bottom-right"></td>
+	            </tr>
+	        </table>
+	    </div>
+        <div class="strawberry">
+            <img src="strawberry-shortcake.jpg" class="mobile-strawberry">
+            <img src="shortcake2.jpg" class="desktop-strawberry">
+        </div>
+    </div>
+    <script src="tic_tac_toe.js"></script>
 </body>
+
 </html>
